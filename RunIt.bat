@@ -1,0 +1,1 @@
+python TestFrmon.py & ECHO. & PAUSE & EXIT

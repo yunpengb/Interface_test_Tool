@@ -1,0 +1,6 @@
+
+Tag,Frmon_Cmd,Expect_Ack,Real_Ack,Do it Match Expect?
+1.1,FRMon action load agent RFAccess Rel3 RFInstance,ret FRMon action load agent RFAccess Rel3 RFInstance ==> error 4 Error parsing load request telegram: agent instance is already loaded,ret FRMon action load agent RFAccess Rel3 RFInstance ==> error 4 Error parsing load request telegram: agent instance is already loaded,Match
+sleep,3.0,,sleep for 3.0 seconds,-
+1.2,FRMon/Rel3/RFInstance action init RFAccess,ret FRMon/Rel3/RFInstance action init RFAccess ==> done 0x00,ret FRMon/Rel3/RFInstance action init RFAccess ==> done 0x00,Match
+1.3,FRMon/Rel3/RFInstance action tx_activate 1,ret FRMon/Rel3/RFInstance action tx_activate 1 ==> failed ff TX activate failed!,ret FRMon/Rel3/RFInstance action tx_activate 1 ==> failed ff TX activate failed!,Match

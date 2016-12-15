@@ -1,0 +1,14 @@
+before run it you should do:
+1.edit config.ini ,
+    frmonIP_1:ip of unit, telnet to it to get FRMON access.
+    frmonIP_2:sometime,you do not know the ip of unit,this ip give you a second chance to try in one test.if you know it,make it same as frmonIP_1.
+    port: frmon port,most time it's 200
+    timeout: if port 200 can't access,how long you will wait.
+    frmonCmdLines: how many lines in your cmd.xls files(include first title line)
+    logtagname: give a name to log file 
+2.make sure the pc have "xlrd" python module
+3.prepared a cmd.xls file which contain the command you need test(keep the format and style)
+
+note:
+1.support "wait for a while" during send frmon cmd,input "sleep" in tag column,input secondfs in "cmd"column.it will work at this line.
+2.double-click the "RunIt.bat" can run the script.Or use cmd commond cd to current directory,and run the TestFrmon.py
